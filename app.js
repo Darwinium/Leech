@@ -31,7 +31,17 @@ app.configure('production', function(){
 
 app.get('/', function(req, res){
   res.render('index', {
-    title: 'Express'
+    title: 'Home'
+  });
+});
+app.get('/about', function(req, res){
+  res.render('index', {
+    title: 'About'
+  });
+});
+app.get('/contact', function(req, res){
+  res.render('index', {
+    title: 'Contact'
   });
 });
 

@@ -1,6 +1,28 @@
-!!!
+!!! 5
 html
   head
     title= title
     link(rel='stylesheet', href='/stylesheets/style.css')
-  body!= body
+    link(rel='stylesheet', href='/stylesheets/chunkfive-fontface.css')
+  body
+    header
+      nav
+        ul
+          li
+            a(href="/") Домой
+          li
+            a(href="/about") О сайте
+          li
+            a(href="/contact") Контакты
+    section#wrapper!= body
+      footer
+        section.css-table
+          section.four-column
+            section.cell
+              p Mauris porttitor <br />felis eu leo aliquet<br /> ac rutrum odio aliquet
+            section.cell
+              p Mauris porttitor <br />felis eu leo aliquet<br /> ac rutrum odio aliquet
+            section.cell
+              p Mauris porttitor <br />felis eu leo aliquet<br /> ac rutrum odio aliquet
+            section.cell
+              p Mauris porttitor <br />felis eu leo aliquet<br /> ac rutrum odio aliquet
